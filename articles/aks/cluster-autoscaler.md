@@ -133,7 +133,7 @@ In the previous step to create an AKS cluster or update an existing node pool, t
 > [!NOTE]
 > The cluster autoscaler enforces the minimum count in cases where the actual count drops below the minimum due to external factors, such as during a spot eviction or when changing the minimum count value from the AKS API.
 
-Monitor the performance of your applications and services, and adjust the cluster autoscaler node counts to match the required performance.
+Monitor the performance of your applications and services and adjust the cluster autoscaler node counts to match the required performance.
 
 ## Use the cluster autoscaler profile
 
@@ -162,7 +162,7 @@ You can also configure more granular details of the cluster autoscaler by changi
 > [!IMPORTANT]
 > When using the autoscaler profile, keep the following information in mind:
 >
-> * The cluster autoscaler profile affects **all node pools** that use the cluster autoscaler. You can't set an autoscaler profile per node pool. When you est the profile, any existing node pools with the cluster autoscaler enabled immediately start using the profile.
+> * The cluster autoscaler profile affects **all node pools** that use the cluster autoscaler. You can't set an autoscaler profile per node pool. When you set the profile, any existing node pools with the cluster autoscaler enabled immediately start using the profile.
 > * The cluster autoscaler profile requires version *2.11.1* or greater of the Azure CLI. If you need to install or upgrade, see [Install Azure CLI][azure-cli-install].
 
 ### Set the cluster autoscaler profile on a new cluster
